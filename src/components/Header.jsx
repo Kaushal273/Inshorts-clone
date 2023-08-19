@@ -12,11 +12,19 @@ const MenuIcon = styled(Menu)`
     color: #000;
 `;
 
+const Image = styled('img')({
+    height: 55,
+    margin: 'auto',
+    paddingRight: 70,
+})
+
 const Header = () => {
+    const url = 'https://assets.inshorts.com/website_assets/images/logo_inshorts.png';
     return(
-        <StyledHeader>
+        <StyledHeader position='static'>
             <Toolbar>
-                <MenuIcon />
+                <MenuIcon/>
+                <Image src={url} alt="logo" />
             </Toolbar>
         </StyledHeader>
     )
